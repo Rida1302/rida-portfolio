@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rida Fatima — Assistant Manager | EdTech & Program Management">
+  <title>Rida Fatima | EdTech & Program Management</title>
+  <style>
+    :root{
+      --bg:#f7f7f4; --surface:#ffffff; --text:#171717; --muted:#666;
+      --line:#e5e5e0; --accent:#263c2d; --accent2:#dfe8df; --max:1080px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:auto;padding:0 28px}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;letter-spacing:.08em;font-size:14px}
+    nav .links{display:flex;gap:25px;font-size:14px;color:#555}
+    nav .links a:hover{color:var(--text)}
+    .hero{min-height:650px;display:grid;align-items:center;padding:85px 0 100px}
+    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:700;margin-bottom:18px}
+    h1{font-size:clamp(52px,8vw,94px);line-height:.95;letter-spacing:-.065em;margin:0 0 28px;max-width:900px}
+    .hero p{font-size:20px;max-width:720px;color:#555;margin:0 0 32px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 18px;border:1px solid #222;border-radius:999px;font-size:14px;font-weight:700}
+    .btn.primary{background:#171717;color:#fff}
+    section{padding:100px 0;border-top:1px solid var(--line)}
+    .section-grid{display:grid;grid-template-columns:260px 1fr;gap:70px}
+    .section-label{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:#777;font-weight:800}
+    h2{font-size:clamp(34px,5vw,54px);line-height:1.02;letter-spacing:-.04em;margin:0 0 28px}
+    .lead{font-size:20px;color:#444;max-width:760px}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:38px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+    .card h3{margin:0 0 10px;font-size:20px}
+    .card p{margin:0;color:#666;font-size:15px}
+    .timeline{display:grid;gap:18px}
+    .role{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+    .role-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+    .role h3{margin:0;font-size:22px}
+    .role .company{font-weight:700;color:var(--accent)}
+    .date{font-size:13px;color:#777;white-space:nowrap}
+    .tagline{font-size:13px;color:#777;margin:5px 0 18px}
+    .role ul{margin:0;padding-left:19px;color:#555}
+    .role li{margin:7px 0}
+    .skill-group{margin:0 0 24px}
+    .skill-group h3{font-size:14px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 10px;color:#555}
+    .pills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{background:var(--surface);border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:14px}
+    .awards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .award{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+    .award .icon{font-size:22px;margin-bottom:16px}
+    .award h3{margin:0 0 7px;font-size:18px}
+    .award p{margin:0;color:#666;font-size:14px}
+    .edu{display:grid;gap:14px}
+    .edu-item{padding:22px 0;border-bottom:1px solid var(--line)}
+    .edu-item:last-child{border-bottom:0}
+    .edu-item h3{margin:0;font-size:20px}
+    .edu-item p{margin:5px 0 0;color:#666}
+    .contact{background:var(--accent);color:#fff;border-radius:28px;padding:60px}
+    .contact h2{max-width:650px}
+    .contact p{color:#dce4dd;max-width:620px;font-size:18px}
+    .contact .btn{border-color:#fff;color:#fff}
+    footer{padding:30px 0;color:#777;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:800px){
+      nav .links{display:none}
+      .hero{min-height:auto;padding:75px 0 85px}
+      .section-grid{grid-template-columns:1fr;gap:25px}
+      .cards,.awards{grid-template-columns:1fr}
+      .role-top{display:block}
+      .date{display:block;margin-top:5px}
+      .contact{padding:38px 26px}
+      footer{display:block}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#">RIDA FATIMA</a>
+      <div class="links">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
+        <a href="#recognition">Recognition</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="eyebrow">EdTech · Program Management · Learning</div>
+        <h1>Education × Technology × Data.</h1>
+        <p>I'm Rida Fatima, an Assistant Manager with 3+ years of experience in EdTech, working across program operations, academic planning, learner success and stakeholder management.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#experience">Explore my experience</a>
+          <a class="btn" href="https://www.linkedin.com/in/rida13" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="section-grid">
+        <div class="section-label">01 — About</div>
+        <div>
+          <h2>People, programs and better learning experiences.</h2>
+          <p class="lead">I work at the intersection of education, technology and data. My experience includes managing learning programs, supporting academic planning, coordinating with cross-functional stakeholders and using data-driven approaches to support learner outcomes.</p>
+          <p class="lead">With a Master's degree in Computer Science and a B.Ed. in Educational/Instructional Technology, I bring together technical understanding, operational thinking and a customer-first approach.</p>
+          <div class="cards">
+            <div class="card"><h3>Program Management</h3><p>Planning, coordinating and supporting learning programs and operational delivery.</p></div>
+            <div class="card"><h3>Academic & Learning</h3><p>Academic planning, content and learning support, mentoring and LMS-based learning.</p></div>
+            <div class="card"><h3>Data & Technology</h3><p>Hands-on experience with Python, SQL, Excel, Salesforce and digital learning tools.</p></div>
+            <div class="card"><h3>Customer & Communication</h3><p>Stakeholder communication, client relations, customer success and public speaking.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-grid">
+        <div class="section-label">02 — Experience</div>
+        <div class="timeline">
+          <div class="role">
+            <div class="role-top"><div><div class="company">UNext Learning</div><h3>Assistant Manager</h3></div><div class="date">Aug 2024 — Present</div></div>
+            <div class="tagline">Program Management · Operations · Learning · Data</div>
+            <ul>
+              <li><b>Program Management:</b> Manage and support program operations, academic planning and learner-success initiatives within the EdTech environment.</li>
+              <li><b>Program Planning:</b> Plan and coordinate training programs while working with stakeholders to support effective program delivery.</li>
+              <li><b>Operations Management:</b> Coordinate academic and operational activities to support smooth execution of ongoing programs.</li>
+              <li><b>Data Handling & Reporting:</b> Use Excel and SQL for program data, reporting and data-driven decision making.</li>
+              <li><b>Stakeholder Management:</b> Collaborate with cross-functional teams and stakeholders to address program and learner requirements.</li>
+              <li><b>LMS Management:</b> Support learning activities through LMS and digital learning tools.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <div class="role-top"><div><div class="company">UNext Learning</div><h3>Academic Advisor (Content and Learning)</h3></div><div class="date">Jul 2023 — Aug 2024</div></div>
+            <div class="tagline">Academic Planning · Content & Learning · Quality</div>
+            <ul>
+              <li><b>Academic Planning:</b> Supported academic planning and content-learning activities to facilitate effective learning delivery.</li>
+              <li><b>Content & Learning:</b> Worked on academic content and learning processes while supporting learner requirements.</li>
+              <li><b>Quality Control:</b> Supported quality checks and process-oriented approaches across academic and learning activities.</li>
+              <li><b>Technical Proficiency:</b> Applied technical and digital learning tools to support content and academic operations.</li>
+              <li><b>Client Relations:</b> Coordinated with stakeholders and supported communication related to academic and learner requirements.</li>
+              <li><b>LMS:</b> Worked with learning management systems and digital learning tools to support academic delivery.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <div class="role-top"><div><div class="company">Oda Class</div><h3>Academic Mentor</h3></div><div class="date">Jan 2023 — Aug 2023</div></div>
+            <div class="tagline">Academic Mentoring · Learner Support · Communication</div>
+            <ul>
+              <li><b>Academic Mentoring:</b> Provided academic guidance and mentoring to learners throughout their learning journey.</li>
+              <li><b>Learner Support:</b> Assisted learners with academic requirements and provided ongoing guidance.</li>
+              <li><b>Communication:</b> Maintained learner-focused communication to understand requirements and provide appropriate academic support.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <div class="role-top"><div><div class="company">PlanetSpark</div><h3>Public Speaking Expert</h3></div><div class="date">Oct 2022 — Dec 2022</div></div>
+            <div class="tagline">Public Speaking · Communication · Learner Engagement</div>
+            <ul>
+              <li><b>Public Speaking:</b> Delivered public-speaking guidance and training to help learners develop communication skills.</li>
+              <li><b>Communication Skills:</b> Supported learners in improving presentation, speaking and communication abilities.</li>
+              <li><b>Learner Engagement:</b> Provided personalized guidance and feedback based on individual learner requirements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-grid">
+        <div class="section-label">03 — Skills</div>
+        <div>
+          <h2>A practical mix of technology, operations and people skills.</h2>
+          <div class="skill-group"><h3>Programming & Data</h3><div class="pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Excel Advanced</span></div></div>
+          <div class="skill-group"><h3>CRM & Learning Technology</h3><div class="pills"><span class="pill">Salesforce</span><span class="pill">Salesforce Training</span><span class="pill">LMS</span><span class="pill">Technical Proficiency</span><span class="pill">Information Technology</span></div></div>
+          <div class="skill-group"><h3>Program Management</h3><div class="pills"><span class="pill">Program Management</span><span class="pill">Program Planning</span><span class="pill">Operations Management</span><span class="pill">Training Plans</span></div></div>
+          <div class="skill-group"><h3>Customer & Client Management</h3><div class="pills"><span class="pill">Customer Success</span><span class="pill">Customer Retention</span><span class="pill">Client Relations</span></div></div>
+          <div class="skill-group"><h3>Quality & Strategy</h3><div class="pills"><span class="pill">Test Cases</span><span class="pill">Quality Control</span><span class="pill">Strategic Thinking</span></div></div>
+          <div class="skill-group"><h3>Leadership & Communication</h3><div class="pills"><span class="pill">Team Leadership</span><span class="pill">Corporate Communications</span><span class="pill">Public Relations</span><span class="pill">Public Speaking</span><span class="pill">Communication</span><span class="pill">Peer Mentoring</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recognition">
+      <div class="section-grid">
+        <div class="section-label">04 — Recognition</div>
+        <div>
+          <h2>Recognition along the way.</h2>
+          <div class="awards">
+            <div class="award"><div class="icon">🏆</div><h3>Target Achievement</h3><p>UNext Learning · January 2025</p></div>
+            <div class="award"><div class="icon">⭐</div><h3>Stand Out Performer</h3><p>UNext Learning Pvt. Ltd.</p></div>
+            <div class="award"><div class="icon">🌱</div><h3>Environment Conservation</h3><p>Government of Madhya Pradesh · February 2023</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-grid">
+        <div class="section-label">05 — Education</div>
+        <div class="edu">
+          <div class="edu-item"><h3>Rani Durgavati University</h3><p>Bachelor of Education — Educational/Instructional Technology · 2021–2024</p></div>
+          <div class="edu-item"><h3>Makhanlal Chaturvedi National University of Journalism and Communication</h3><p>Master's Degree — Computer Science · 2019–2021</p></div>
+          <div class="edu-item"><h3>St. Aloysius College</h3><p>Bachelor of Science — Computer Science · 2015–2018</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="eyebrow" style="color:#dce4dd">06 — Contact</div>
+        <h2>Let's connect.</h2>
+        <p>Interested in EdTech, learning programs, program management or simply want to connect? Reach out by email or LinkedIn.</p>
+        <div class="buttons">
+          <a class="btn" href="mailto:ridafatima1302@gmail.com">Email Rida</a>
+          <a class="btn" href="https://www.linkedin.com/in/rida13" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© Rida Fatima</span>
+      <span>Assistant Manager · EdTech & Program Management</span>
+    </footer>
+  </div>
+</body>
+</html>
